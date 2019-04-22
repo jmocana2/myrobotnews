@@ -6,7 +6,8 @@ import { createGenerateClassName, jssPreset } from "@material-ui/core/styles";
 import Button from '@material-ui/core/Button';
 import logo from './logo.svg';
 import './App.css';
-
+import { JssButton } from './components/Button/';
+ 
 const StyledButton = styled(Button)`
   background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
   border-radius: 3px;
@@ -28,6 +29,7 @@ const jss = create({
 
 class App extends Component {
   render() {
+
     return (
       <JssProvider jss={jss} generateClassName={generateClassName}>
       <div className="App">
@@ -45,10 +47,11 @@ class App extends Component {
           >
             Learn React
           </a>
-          <StyledButton variant="contained" color="primary">
-            Hello, material-UI with styled components
-          </StyledButton>
-          <p css={`color: red`}>Probando atributo css</p>
+          <Button className="button" variant="contained" color="primary">
+            Extendiendo botón de material con css
+          </Button>
+          <StyledButton>Extendiendo botón de material con styled</StyledButton>
+          <JssButton>Botón estilado con jss</JssButton>
         </header>
       </div>
       </JssProvider>
