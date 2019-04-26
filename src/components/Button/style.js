@@ -1,6 +1,6 @@
 export const styles = {
   myButton: {
-    color: 'green',
+    color: props => props.active ? 'green' : 'red',
     display: 'block',
     margin: '10px 20px 5px 4px',
     '& span': {

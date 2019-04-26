@@ -6,8 +6,8 @@ import { styles } from './style';
 // most plugins are available without further configuration needed.
 
 
-const Button = ({classes, children}) => (
-  <button className={classes.myButton}>
+const Button = ({classes, children, active}) => (
+  <button className={classes.myButton} active={active}>
     <span className={classes.myLabel}>{children}</span>
   </button>
 )

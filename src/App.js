@@ -27,6 +27,11 @@ const jss = create({
   insertionPoint: "insertion-point-jss"
 });
 
+const estilillo = `
+  color: red; 
+  background-color: blue;`
+
+
 class App extends Component {
   render() {
 
@@ -47,11 +52,11 @@ class App extends Component {
           >
             Learn React
           </a>
-          <Button className="button" variant="contained" color="primary">
+          <Button className="button" variant="contained" color="primary" css={estilillo}>
             Extendiendo botón de material con css
           </Button>
           <StyledButton>Extendiendo botón de material con styled</StyledButton>
-          <JssButton>Botón estilado con jss</JssButton>
+          <JssButton active={false}>Botón estilado con jss</JssButton>
         </header>
       </div>
       </JssProvider>
