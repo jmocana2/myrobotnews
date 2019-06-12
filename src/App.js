@@ -5,7 +5,7 @@ import styled from 'styled-components/macro'
 import { createGenerateClassName, jssPreset } from "@material-ui/core/styles";
 import Button from '@material-ui/core/Button';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { JssButton } from './components/Button/';
  
 const StyledButton = styled(Button)`
