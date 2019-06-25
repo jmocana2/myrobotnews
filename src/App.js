@@ -6,7 +6,7 @@ import { createGenerateClassName, jssPreset } from "@material-ui/core/styles";
 import Button from '@material-ui/core/Button';
 import logo from './logo.svg';
 import './App.scss';
-import { JssButton } from './components/Button/';
+import { JssButton } from './components/core/Button/';
  
 const StyledButton = styled(Button)`
   background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
