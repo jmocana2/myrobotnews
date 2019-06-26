@@ -6,8 +6,7 @@ import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import logo from './logo.svg';
 import './App.scss';
-import { JssButton } from './components/core/Button/';
- 
+
 const StyledButton = styled(Button)`
   background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
   border-radius: 3px;
@@ -63,7 +62,6 @@ class App extends PureComponent {
             <StyledButton>
               Extendiendo botón de material con styled
             </StyledButton>
-            <JssButton active={false}>Botón estilado con jss</JssButton>
           </header>
         </div>
       </JssProvider>
