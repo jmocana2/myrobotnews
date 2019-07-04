@@ -1,8 +1,7 @@
 const colors = {
-
-  //PALETA
+  // PALETA
   darkPrimary: '#303F9F',
-  primary: '#3F51B5', 
+  primary: '#3F51B5',
   lightPrimary: '#C5CAE9',
   accent: '#E040FB',
   primaryText: '#212121',
@@ -38,7 +37,7 @@ const colors = {
   colorSix: '#c580b7',
   activeBlue: '#dbf1bb',
   blueLinkedin: '#256da8',
-  lightLinkedin: '#597BBB'
+  lightLinkedin: '#597BBB',
 };
 
 export default colors;

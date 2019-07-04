@@ -13,7 +13,7 @@ const fonts = {
   italic: '"OpenSans Italic", Helvetica, Arial, sans-serif',
   semibold: '"OpenSans Semibold", Helvetica, Arial, sans-serif',
   bold: '"OpenSans Bold", Helvetica, Arial, sans-serif',
-  extrabold: '"OpenSans Extrabold", Helvetica, Arial, sans-serif'
+  extrabold: '"OpenSans Extrabold", Helvetica, Arial, sans-serif',
 };
 
 // Carga de las fuentes

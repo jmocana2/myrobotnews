@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Date from '.';
+import Today from '.';
 
 storiesOf('Fecha', module).add('default', () => (
   <div
@@ -11,6 +11,6 @@ storiesOf('Fecha', module).add('default', () => (
       padding: '20px',
     }}
   >
-    <Date />
+    <Today />
   </div>
 ));
