@@ -4,7 +4,7 @@ import StyledDate from './style';
 /** utils */
 import getWeekDay from '../../../../utils/dates';
 
-const Date = () => {
+const Today = () => {
   return (
     <StyledDate dateTime="2019-01-07 08:19">
       {`${getWeekDay()}, 1 de julio de 2019`}
@@ -12,4 +12,4 @@ const Date = () => {
   );
 };
 
-export default Date;
+export default Today;
