@@ -14,4 +14,33 @@ const getWeekDay = () => {
   return days[newDate.getDay()];
 };
 
-export default getWeekDay;
+const getDay = () => {
+  const d = new Date();
+  return d.getDay();
+};
+
+const getMonth = () => {
+  const meses = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre',
+  ];
+  const d = new Date();
+  return meses[d.getMonth()];
+};
+
+const getYear = () => {
+  const d = new Date();
+  return d.getFullYear();
+};
+
+export { getWeekDay, getDay, getMonth, getYear };
