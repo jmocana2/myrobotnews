@@ -4,7 +4,6 @@ import { create } from 'jss';
 import styled from 'styled-components/macro';
 import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import logo from './logo.svg';
 import './App.scss';
 
 const StyledButton = styled(Button)`
@@ -36,7 +35,6 @@ class App extends PureComponent {
       <JssProvider jss={jss} generateClassName={generateClassName}>
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
             <p>
               Edit <code>src/App.js</code> and save to reload.
             </p>

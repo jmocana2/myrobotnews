@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import App from './App';
-import Today from './components/core/date/view';
+import Today from './components/core/Today/view';
 
 const routes = () => (
   <Router>
