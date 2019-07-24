@@ -55,6 +55,10 @@ const unopinionatedRules = {
     'font-size': '1em',
   },
 
+  ul: {
+    'list-style': 'none',
+  },
+
   a: {
     'background-color': 'transparent',
     '-webkit-text-decoration-skip': 'objects',

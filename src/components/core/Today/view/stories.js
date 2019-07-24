@@ -4,7 +4,7 @@ import TodayReadme from './README.md';
 
 import Today from '.';
 
-storiesOf('Fecha', module)
+storiesOf('core/Fecha', module)
   .addParameters({
     readme: {
       sidebar: TodayReadme,
