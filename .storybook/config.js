@@ -5,7 +5,7 @@ import { create } from 'jss';
 import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
 import { addReadme } from 'storybook-readme';
 import { ThemeProvider } from 'styled-components';
-import  Theme  from '../src/config/themes';
+import  { Theme, GlobalStyle }  from '../src/config/themes';
 
 const req = require.context('../src/components/', true, /stories\.js$/);
 
@@ -26,8 +26,11 @@ function loadStories() {
 
 addDecorator((story) => (
 <JssProvider jss={jss} generateClassName={generateClassName}>
-  <ThemeProvider theme={Theme}>    
-    {story()} 
+  <ThemeProvider theme={Theme}>     
+    <React.Fragment>
+      <GlobalStyle />   
+      {story()} 
+    </React.Fragment>
   </ThemeProvider>
 </JssProvider>
 ));

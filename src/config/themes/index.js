@@ -121,18 +121,10 @@ ${fontsFace}
   ul, ol, dl {
     font-size: ${rem("16px")};
   }
-  
-  ul {
-    margin: ${rem("4px")} 0 ${rem("9px")} 0;
-    ${mediaqueries.lessThan("mobile")`
-      padding-left: ${rem("15px")};
-    `};
-  }
 
   li {
     position: relative;
     margin-left: 0;
-    padding-left: ${rem("28px")};
     &:before {
       position: absolute;
     }
@@ -148,19 +140,6 @@ ${fontsFace}
         left: 0;
         font-family: ${fonts.bold};
         top: ${rem("-1px")};
-      }
-    }
-  }
-
-  ul {
-    > li {
-      &:before {
-        background-color: ${colors.primary};
-        content: '';
-        height: ${rem("5px")};
-        top: ${rem("10px")};
-        left: 0;
-        width: ${rem("8px")};
       }
     }
   }
@@ -197,4 +176,4 @@ const Theme = {
   fontsFace,  
 };
 
-export default Theme;
+export { Theme };
