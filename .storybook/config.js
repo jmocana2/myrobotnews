@@ -5,7 +5,8 @@ import { create } from 'jss';
 import { createGenerateClassName, jssPreset } from '@material-ui/core/styles';
 import { addReadme } from 'storybook-readme';
 import { ThemeProvider } from 'styled-components';
-import  { Theme, GlobalStyle }  from '../src/config/themes';
+import  { GlobalStyle }  from '../src/config/themes';
+import Theme from '../src/config/themes';
 
 const req = require.context('../src/components/', true, /stories\.js$/);
 

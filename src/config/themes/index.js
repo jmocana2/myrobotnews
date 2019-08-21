@@ -176,4 +176,4 @@ const Theme = {
   fontsFace,  
 };
 
-export { Theme };
+export default Theme;
