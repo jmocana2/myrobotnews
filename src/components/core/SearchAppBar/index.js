@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /** Material-UI */
 import AppBar from '@material-ui/core/AppBar';
@@ -11,8 +12,6 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-
-/** Icons */
 import SearchIcon from '@material-ui/icons/Search';
 
 /** styles */
@@ -94,14 +93,13 @@ export default function SearchAppBar({ className }) {
 
           <nav className="SearchAppBar-nav">
             <ul className="SearchAppBar-menu">
-              <li>España</li>
-              <li>Internacional</li>
-              <li>Economía</li>
-              <li>Deportes</li>
-              <li>Sociedad</li>
-              <li>Cultura</li>
-              <li>Ciencia</li>
-              <li>Tecnología</li>
+              <li className="SearchAppBar-item">España</li>
+              <li className="SearchAppBar-item">Internacional</li>
+              <li className="SearchAppBar-item">Economía</li>
+              <li className="SearchAppBar-item">Deportes</li>
+              <li className="SearchAppBar-item">Cultura</li>
+              <li className="SearchAppBar-item">Ciencia</li>
+              <li className="SearchAppBar-item">Tecnología</li>
             </ul>
           </nav>
           <div className="SearchAppBar-search">
@@ -117,3 +115,7 @@ export default function SearchAppBar({ className }) {
     </StyledSearchAppBar>
   );
 }
+
+SearchAppBar.propTypes = {
+  className: PropTypes.string,
+};

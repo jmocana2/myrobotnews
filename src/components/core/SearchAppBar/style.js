@@ -4,8 +4,7 @@ import InputBase from '@material-ui/core/InputBase';
 import mediaqueries from '../../../config/themes/variables/mediaqueries';
 
 const StyledSearchAppBar = styled.div`
-  background-color: ${props => props.theme.colors.lightPrimary};
-  padding: ${rem('14px')} 0;
+  background-color: ${props => props.theme.colors.lightPrimary};  
   display: flex;
   justify-content: space-between;
   .SearchAppBar-App {
@@ -18,14 +17,46 @@ const StyledSearchAppBar = styled.div`
   }
   .SearchAppBar-BtnMenu {
     padding: 0;
+    ${mediaqueries.greaterThan('tabletLandscape')`
+      display: none;
+    `};
   }
 
   /** Menú desktop */
   .SearchAppBar-nav {
     display: none;
     ${mediaqueries.greaterThan('tabletLandscape')`
-      //versión desktop del menú
+      display: block;
     `};
+  }
+  .SearchAppBar-menu{
+    display: flex;
+  }
+  .SearchAppBar-item{
+    font-family: ${props => props.theme.fonts.bold};
+    font-size: ${rem('14px')};
+    color: ${props => props.theme.colors.grayDarkest};
+    margin-left: ${rem('25px')};
+    margin-right: ${rem('25px')};
+    position: relative;    
+    &:before{
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: -25px;
+      width: 1px;
+      height: 14px;
+      background-color: ${props => props.theme.colors.grayDarkest};
+    }
+    &:first-child{
+      margin-left: 0;
+      &:before{
+        content: none;
+      }
+    }
+    &:last-child{
+      margin-right: 0;
+    }
   }
   /** Buscador */
   .SearchAppBar-search {
