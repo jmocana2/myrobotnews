@@ -16,7 +16,7 @@ const getWeekDay = () => {
 
 const getDay = () => {
   const d = new Date();
-  return d.getDay();
+  return d.getDate();
 };
 
 const getMonth = () => {

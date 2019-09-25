@@ -4,9 +4,9 @@ import InputBase from '@material-ui/core/InputBase';
 import mediaqueries from '../../../config/themes/variables/mediaqueries';
 
 const StyledSearchAppBar = styled.div`
-  background-color: ${props => props.theme.colors.lightPrimary};  
   display: flex;
   justify-content: space-between;
+  
   .SearchAppBar-App {
     background-color: transparent;
     box-shadow: none;
@@ -14,6 +14,9 @@ const StyledSearchAppBar = styled.div`
   .SearchAppBar-App-toolbar {
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: auto;
   }
   .SearchAppBar-BtnMenu {
     padding: 0;
@@ -31,6 +34,8 @@ const StyledSearchAppBar = styled.div`
   }
   .SearchAppBar-menu{
     display: flex;
+    padding-left: 0;
+    margin: 0;
   }
   .SearchAppBar-item{
     font-family: ${props => props.theme.fonts.bold};

@@ -168,6 +168,12 @@ ${fontsFace}
     }
   }
 
+  .centrar{
+    width: 100%;
+    max-width: ${rem("1200px")};
+    margin: 0 auto;
+  }
+
 `;
 
 const Theme = {
