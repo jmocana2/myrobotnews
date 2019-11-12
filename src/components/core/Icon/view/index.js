@@ -1,21 +1,19 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-const Icon = ({ className, svg, ...rest }) => (
-  <svg className={className} {...rest}>
-    <use xlinkHref={`#${svg.id}`} />
-  </svg>
+/**
+ * @param {component} - svg
+ * @param {...rest} - rest params
+ * @return {component} - Icon
+ */
+
+const Icon = ({ svg: SVGR, ...rest }) => (
+  <Fragment>{SVGR && <SVGR {...rest} />}</Fragment>
 );
 
+/** Proptypes */
 Icon.propTypes = {
-  className: PropTypes.string,
-  svg: PropTypes.shape({
-    id: PropTypes.string,
-  }).isRequired,
-};
-
-Icon.defaultProps = {
-  className: undefined,
+  svg: PropTypes.elementType.isRequired,
 };
 
 export default Icon;

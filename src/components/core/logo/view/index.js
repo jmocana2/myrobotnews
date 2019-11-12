@@ -7,12 +7,12 @@ import Icon from '../../Icon/view';
 import StyledLogo from './style';
 
 /** assets */
-import IconClock from '../../../../../assets/images/svg/reloj-arena.svg';
+import { Hourglass } from '../../../../assets/images/svg';
 
 const Logo = () => {
   return (
     <StyledLogo>
-      MyRobotNews <Icon height="65px" svg={IconClock} className="Logo-svg" />
+      MyRobotNews <Icon height="65px" svg={Hourglass} className="Logo-svg" />
     </StyledLogo>
   );
 };

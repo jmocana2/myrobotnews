@@ -1,11 +1,11 @@
 import { css } from 'styled-components';
 
-import openLight from '../../../../assets/fonts/opensans-light-webfont.woff';
-import openRegular from '../../../../assets/fonts/opensans-regular-webfont.woff';
-import openItalic from '../../../../assets/fonts/opensans-italic-webfont.woff';
-import openSemibold from '../../../../assets/fonts/opensans-semibold-webfont.woff';
-import openBold from '../../../../assets/fonts/opensans-bold-webfont.woff';
-import openExtrabold from '../../../../assets/fonts/opensans-extrabold-webfont.woff';
+import openLight from '../../../assets/fonts/opensans-light-webfont.woff';
+import openRegular from '../../../assets/fonts/opensans-regular-webfont.woff';
+import openItalic from '../../../assets/fonts/opensans-italic-webfont.woff';
+import openSemibold from '../../../assets/fonts/opensans-semibold-webfont.woff';
+import openBold from '../../../assets/fonts/opensans-bold-webfont.woff';
+import openExtrabold from '../../../assets/fonts/opensans-extrabold-webfont.woff';
 
 const fonts = {
   light: '"OpenSans Light", Helvetica, Arial, sans-serif',

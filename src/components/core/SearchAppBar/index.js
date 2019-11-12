@@ -119,3 +119,7 @@ export default function SearchAppBar({ className }) {
 SearchAppBar.propTypes = {
   className: PropTypes.string,
 };
+
+SearchAppBar.defaultProps = {
+  className: undefined,
+};

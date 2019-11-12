@@ -7,11 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import Theme from './config/themes';
 
 ReactDOM.render(
-  <div style={{ backgroundColor: 'red' }}>
-    <ThemeProvider theme={Theme}>
-      <Routes />
-    </ThemeProvider>
-  </div>,
+  <ThemeProvider theme={Theme}>
+    <Routes />
+  </ThemeProvider>,
   document.getElementById('root'),
 );
 

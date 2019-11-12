@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import StyledDate from './style';
 
 /** utils */
@@ -11,6 +12,14 @@ const Today = ({ className }) => {
       {`, ${getDay()} de ${getMonth().toLowerCase()} de ${getYear()}`}
     </StyledDate>
   );
+};
+
+Today.propTypes = {
+  className: PropTypes.string,
+};
+
+Today.defaultProps = {
+  className: undefined,
 };
 
 export default Today;
