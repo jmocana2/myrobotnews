@@ -4,8 +4,7 @@ import Icon from '.';
 import IconReadme from './README.md';
 
 /** Icon library */
-import IconAlert from '../../../../../assets/images/svg/alert-icon.svg';
-import IconClock from '../../../../../assets/images/svg/reloj-arena.svg';
+import { Hourglass, Alert } from '../../../../assets/images/svg';
 
 storiesOf('core/Icons', module)
   .addParameters({
@@ -23,10 +22,10 @@ storiesOf('core/Icons', module)
         }}
       >
         <li>
-          <Icon width="40px" svg={IconAlert} fill="white" />
+          <Icon width="40px" svg={Hourglass} fill="white" />
         </li>
         <li>
-          <Icon width="40px" svg={IconClock} />
+          <Icon width="40px" svg={Alert} />
         </li>
       </ul>
     </div>
