@@ -120,11 +120,13 @@ ${fontsFace}
 
   ul, ol, dl {
     font-size: ${rem("16px")};
+    list-style: none;
   }
 
   li {
     position: relative;
     margin-left: 0;
+    list-style: none;
     &:before {
       position: absolute;
     }
