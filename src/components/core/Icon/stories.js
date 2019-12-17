@@ -4,7 +4,7 @@ import Icon from '.';
 import IconReadme from './README.md';
 
 /** Icon library */
-import { Hourglass, Alert } from '../../../../assets/images/svg';
+import { Hourglass, Alert } from '../../../assets/images/svg';
 
 storiesOf('core/Icons', module)
   .addParameters({

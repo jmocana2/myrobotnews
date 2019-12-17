@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { rem } from 'polished';
-import mediaqueries from '../../../../config/themes/variables/mediaqueries';
+import mediaqueries from '../../../config/themes/variables/mediaqueries';
 
 const StyledLogo = styled.h1`
   font-family: 'Impact', 'sans-serif';

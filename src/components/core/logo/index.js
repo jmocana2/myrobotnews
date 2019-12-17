@@ -1,13 +1,13 @@
 import React from 'react';
 
 /** dependencies */
-import Icon from '../../Icon/view';
+import Icon from '../Icon';
 
 /** styles */
 import StyledLogo from './style';
 
 /** assets */
-import { Hourglass } from '../../../../assets/images/svg';
+import { Hourglass } from '../../../assets/images/svg';
 
 const Logo = () => {
   return (

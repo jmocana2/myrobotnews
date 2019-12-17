@@ -1,12 +1,15 @@
 import React from 'react';
 
-import Header from '../../core/Header/view';
+import Header from '../../core/Header';
+import New from '../../core/New';
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <p>aquí el modal</p>
+      <div>
+        <New />
+      </div>
     </div>
   );
 };

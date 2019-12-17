@@ -1,10 +1,10 @@
 import React from 'react';
 
 /** core */
-import Today from '../../Today/view';
-import Logo from '../../logo/view';
-import Button from '../../Button/view';
-import SearchAppBar from '../../SearchAppBar';
+import Today from '../Today';
+import Logo from '../logo';
+import Button from '../Button';
+import SearchAppBar from '../SearchAppBar';
 
 /** styles */
 import StyledHeader from './style';

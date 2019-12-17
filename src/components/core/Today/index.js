@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import StyledDate from './style';
 
 /** utils */
-import { getWeekDay, getDay, getMonth, getYear } from '../../../../utils/dates';
+import { getWeekDay, getDay, getMonth, getYear } from '../../../utils/dates';
 
 const Today = ({ className }) => {
   return (
