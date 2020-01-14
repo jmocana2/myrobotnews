@@ -12,53 +12,45 @@ import {
 
 import Photo from '../../../assets/images/full-photo.jpg';
 
-const New = ({
-  type,
-  title,
-  description,
-  headband,
-  image,
-  imageCaption,
-  author,
-}) => {
+const New = ({ type, dataNew }) => {
   console.log('imagen: ', Photo);
   return (
     <StyledNew type={type}>
-      {headband && <StyledHeadband>{headband}</StyledHeadband>}
-      {image && (
+      {dataNew.headband && <StyledHeadband>{dataNew.headband}</StyledHeadband>}
+      {dataNew.image && (
         <figure className="new-figure">
-          <img className="new-image" src={image} alt="#" />
-          {imageCaption && (
+          <img className="new-image" src={dataNew.image} alt="#" />
+          {dataNew.imageCaption && (
             <StyledCaption className="new-image-description">
-              {imageCaption}
+              {dataNew.imageCaption}
             </StyledCaption>
           )}
         </figure>
       )}
-      <StyledTitle>{title}</StyledTitle>
-      {description && <StyledDescription>{description}</StyledDescription>}
-      {author && <StyledAuthor>{author}</StyledAuthor>}
+      <StyledTitle>{dataNew.title}</StyledTitle>
+      {dataNew.description && (
+        <StyledDescription>{dataNew.description}</StyledDescription>
+      )}
+      {dataNew.author && <StyledAuthor>{dataNew.author}</StyledAuthor>}
     </StyledNew>
   );
 };
 
 New.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string,
   type: PropTypes.oneOf(['full', 'vertical', 'horizontal', 'small']),
-  headband: PropTypes.string,
-  image: PropTypes.string,
-  imageCaption: PropTypes.string,
-  author: PropTypes.string,
+  dataNew: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    headband: PropTypes.string,
+    image: PropTypes.string,
+    imageCaption: PropTypes.string,
+    author: PropTypes.string,
+  }),
 };
 
 New.defaultProps = {
   type: 'vertical',
-  description: undefined,
-  headband: undefined,
-  image: undefined,
-  imageCaption: undefined,
-  author: undefined,
+  dataNew: {},
 };
 
 export default New;

@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 const StyledButton = styled(Button)`
   background-color: ${props => props.theme.colors[props.color]};
   color: ${props =>
-    props.color === 'lightPrimary' || props.color === 'light'
+    props.color === 'inherit' || props.color === 'light'
       ? props.theme.colors.dark
       : props.theme.colors.light};
   transition: 0.7s;

@@ -18,12 +18,12 @@ const Header = className => {
           <Logo />
           <ul className="header-list-butons">
             <li>
-              <Button color="accent" className="header-btn">
+              <Button color="secondary" className="header-btn">
                 Suscribete
               </Button>
             </li>
             <li>
-              <Button color="light" className="header-btn">
+              <Button color="inherit" className="header-btn">
                 Iniciar sesión
               </Button>
             </li>

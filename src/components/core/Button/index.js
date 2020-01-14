@@ -13,21 +13,14 @@ const Button = ({ children, color, className }) => {
 Button.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
-  color: PropTypes.oneOf([
-    'primary',
-    'darkPrimary',
-    'lightPrimary',
-    'accent',
-    'light',
-    'dark',
-  ]),
+  color: PropTypes.oneOf(['default', 'primary', 'secondary', 'inherit']),
 };
 
 Button.defaultProps = {
   /** children */
   children: undefined,
   /** colors of the button */
-  color: 'lightPrimary',
+  color: 'default',
   className: undefined,
 };
 
