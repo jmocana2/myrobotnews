@@ -4,13 +4,15 @@ import NewReadme from './README.md';
 
 import New from '.';
 
+import dataNew from '../../../utils/__mocks__/news';
+
 storiesOf('core/New', module)
   .addParameters({
     readme: {
       sidebar: NewReadme,
     },
   })
-  .add('default', () => (
+  .add('Highlight', () => (
     <div
       style={{
         backgroundColor: '#3e50b4',
@@ -18,6 +20,6 @@ storiesOf('core/New', module)
         padding: '20px 20px 0 20px',
       }}
     >
-      <New />
+      <New dataNew={dataNew} />
     </div>
   ));
